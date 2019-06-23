@@ -1,0 +1,53 @@
+li{
+	font-size: 16px;
+	color: black;
+}
+img{
+	width:auto;
+	height: 200px;
+}
+/*#swiper{
+	width:950px;
+	height:200px;
+}*/
+html{
+	height: 100%;
+}
+#nav1{
+	background:rgba(0,0,0,0.7);
+}
+#about
+{
+	background: white;
+	padding-right: 13%;
+	padding-left: 13%;
+	padding-bottom: 16%;
+}
+body{
+	/*background:url(https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);*/
+	background: url(http://ixd0102.firebird.sheridanc.on.ca/wp-content/uploads/2017/10/1-Background-01-1.jpg);
+	background-size: cover;
+}
+/*html{
+	height: 100%;
+}*/
+a{
+	text-decoration: none;
+}
+.item{
+	background: black;
+}
+/*h2{
+	border-bottom: solid;
+}*/
+hr{
+	width: 333px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+}
+#about{
+	text-align: all;
+}
+#swipe{
+	padding-top: 0%;}

@@ -1,0 +1,59 @@
+#content{
+	text-align: center;
+	padding: 16.3%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+					0px 18px 23px rgba(0,0,0,0.1);
+	color:white;
+}
+a{
+	text-decoration: none;
+}
+body{
+	/*background: url(https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	/*background: url(https://images.pexels.com/photos/735833/pexels-photo-735833.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)*/;
+	/*background: url(https://images.pexels.com/photos/1494707/pexels-photo-1494707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);*/
+	/*background: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);*/
+	background: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	background-position: center;
+	font-family:Lato;
+}
+html{
+	height: 100%;
+}
+.container{
+	padding-top: 7%;
+	padding-bottom: 5%; 
+	padding-right: 19%;
+	padding-left: 19%;
+
+}
+.jumbotron{
+}
+i{
+	font-size: 100px;
+	color: white;
+}
+h1{
+	font-weight: bold;
+	color: white;
+	font-size: 5em;
+}
+hr{
+	width: 333px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

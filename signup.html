@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.min.css">
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="signup_css.css">
+    <style type="text/css">
+         #set{
+    height: 100px;
+    width: 100px;
+    margin-left:44%;
+ /*   position: relative;*/
+  }
+  body{
+    
+    background-image:url(https://i.pinimg.com/originals/31/e1/ad/31e1adfcda16a92682101eced6b295c8.jpg);
+    /*background-repeat: no-repeat; */
+    background-size:cover;
+
+  }
+
+  .container{
+    border-radius: 10%;
+/*    position: absolute;*/
+    margin-left: 30%;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    width: 35%;
+    height: 35%;
+  }
+
+  
+    </style>
+</head>
+<body>
+
+    <div class="main">
+         <img  src="https://pngimage.net/wp-content/uploads/2018/06/logo-user-png-6.png" id="set">
+         <div class="box">
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+             
+            <div class="container">
+                <div class="signup-content">
+                    <center><h1 class="form-title">Registration Form</h1></center>
+                    <form method="POST" id="signup-form" class="signup-form" action="C:\Users\aditya\Desktop\FINAL\Actual.html">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First name</label>
+                                <input type="text" class="form-input" name="first_name" id="first_name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last name</label>
+                                <input type="text" class="form-input" name="last_name" id="last_name" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group form-icon">
+                                <label for="birth_date">Birth date</label>
+                                <input type="text" class="form-input" name="birth_date" id="birth_date" placeholder="MM-DD-YYYY" />
+                            </div>
+                            <div class="form-radio">
+                                <label for="gender">Gender</label>
+                                <div class="form-flex">
+                                    <input type="radio" name="gender" value="male" id="male" checked="checked" />
+                                    <label for="male">Male</label>
+    
+                                    <input type="radio" name="gender" value="female" id="female" />
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-number">
+                            <label for="phone_number">Phone number</label>
+                            <input type="number" class="form-input" name="ph" id="phone_number" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-input" name="pwd" id="password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re_password">Repeat your password</label>
+                                <input type="password" class="form-input" name="re_password" id="re_password"/>
+                            </div>
+                        </div>
+                       <!--  <div class="form-text">
+                            <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Additional info</a>
+                            <div class="add_info"> -->
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-input" name="email" id="email"/>
+                                </div>
+                                <div class="form-group">
+                                     <h3 class="form-title">What type of user are you ?</h3>
+                        <div class="form-radio">
+                        <input type="radio" name="member_level" value="newbie" id="newbie" checked="checked" />
+                        <label for="newbie">User</label>
+
+                        <input type="radio" name="member_level" value="average" id="average" />
+                        <label for="average">Geologists</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zbv">QUALIFICATION</label>
+                                    <div class="select-list">
+                                        <select name="vczbc" id="city" required>
+                                            <option value="zbc">M.SC</option>
+                                            <option value="bdz">M.COM</option>
+                                            <option value="bfb">M.A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <a href><input type="submit" name="submit" id="submit" class="form-submit" value="Submit" onclick="ans()"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script>
+     <script>
+    //     document.getElementById("submit").onclick = function () {
+    //     location.href = "Actual.html";
+    // };
+         function ans()
+{
+var userv=document.forms[0].first_name.value;
+var pwdv=document.forms[0].pwd.value;
+var emailv=document.forms[0].email.value;
+var phv=document.forms[0].ph.value;
+            var userreg=new RegExp("^[a-zA-Z][a-zA-Z0-9]*$");
+            var emailreg=new RegExp("^[a-zA-Z][a-zA-Z0-9_.]*@[a-zA-Z][a-zA-Z0-9_.]*.[a-zA-Z][a-zA-Z0-9_.]{2}");
+            var phreg=new RegExp("^[0-9]{10}$");
+var ruser=userreg.exec(userv);
+var remail=emailreg.exec(emailv);
+var rph=phreg.exec(phv);
+if(ruser && remail && rph && (pwdv.length > 6))
+            {
+            alert("All values are valid");
+            window.location = "sample.html";   
+            return false;
+            }
+            else
+            {
+            if(!ruser) { alert("username invalid");document.forms[0].user.focus();}
+            if(!remail) { alert("email invalid");document.forms[0].email.focus();}
+            if(!rph) { alert("phone number invalid");document.forms[0].ph.focus();}     
+            if(pwdv.length < 6) { alert("password invalid");document.forms[0].pwd.focus();}
+            return false;
+            }
+
+}
+     </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

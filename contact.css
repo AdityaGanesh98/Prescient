@@ -1,0 +1,31 @@
+.col-md-10
+{
+	background-color: #cadbc5;
+
+}
+img{
+	width: 100px;
+	height: auto;
+	box-shadow: 3px 4px;
+}
+html{
+	height: 150%;
+}
+body{
+	background:url(https://i.pinimg.com/originals/31/e1/ad/31e1adfcda16a92682101eced6b295c8.jpg);
+	background-size: cover;
+}
+#contents{
+	width: 850px;
+	height: auto;
+	transition-property: width,height;
+  	transition-duration: 4s;
+
+}
+#contents:hover{
+	opacity: 0.8 ;
+	width: 1000px;
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2),
+  				0px 10px 18px 0px rgba(0,0,0,0.4),
+  				0px 12px 20px 0px rgba(0,0,0,0.8);
+}
